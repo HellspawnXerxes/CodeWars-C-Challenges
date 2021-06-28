@@ -1,0 +1,13 @@
+"""
+Write function heron which calculates the area of a triangle with sides a, b, and c.
+
+Heron's formula: sqrt (s * (s - a) * (s - b) * (s - c)), where s = (a + b + c) / 2. Output should have 2 digits precision.
+"""
+
+
+#include <math.h>
+
+float heron(int a, int b, int c) {
+    float s = (a+b+c)/2.0;
+    return sqrt((s * (s - a) * (s - b) * (s - c)));
+}
